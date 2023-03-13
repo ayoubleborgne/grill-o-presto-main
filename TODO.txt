@@ -1,0 +1,54 @@
+VÉRIFIER AVEC BENOIT (MESSAGE PORTIONS NON CHOISIES)
+seeder statuses (En attente de livraison à en préparation ??)
+
+
+
+
+
+
+
+
+Prix des commandes 
+Le prix est fixé par plat, en fonction du nombre de portions. Mais que le client commande 3 ou 5 plats, le prix par plat demeure le même.
+1=14$ (14/portion), 2=24$ (12/p), 3=30$(10/p), 4=32$(8/p), 5=37.50$ (7.50/p), 6=42$ (7$/p)
+
+
+// =============================== //
+USER LARAVEL FRESH 
+email : admin@hotmail.com
+password : admin123
+
+
+// ====== ENV DE TRAVAIL ====== //
+Créer une BD nommée : grill-o-presto
+composer install 
+npm install 
+npm run dev
+création du .env via exemple 
+php artisan migrate 
+php artisan db:seed --class=AdminSeeder
+php artisan serve
+
+// ===== refaire la db one shot ===== // 
+php artisan migrate:refresh
+php artisan migrate:fresh --seed
+
+
+// ====== ADDONS NICE TO HAVE ====== //
+CSS Formatter - Martin Aeschlimann
+PHP Namespace Resolver - Mehedi Hassan
+PHP Intelephense - Ben Mewburn
+Open in Browser - TechER
+Live Share - Microsoft
+
+
+// ====== SPECIFIC LARAVEL ====== //
+Laravel Blade Formatter - Shuhei Hayashibara
+Laravel Blade Snippets - Winie Lin
+Laravel Blade Spacer - Austen Cameron
+Laravel Extra Intellisense - amir
+
+
+// ====== SPECIFIC COMPOSER ====== //
+laravel-debugbar
+

@@ -1,0 +1,58 @@
+.bg-third {
+    background-color: #3E3B3B;
+}
+
+.title-shadow {
+    text-shadow: rgba(99, 99, 99, 0.2) 0.1rem 0.15rem 0.5rem !important;
+}
+
+
+// ========================================== //
+//                 gestion repas              //
+// ========================================== //
+
+
+.btn-orange {
+    --bs-btn-color: rgb(0, 0, 0) !important;
+    --bs-btn-bg: #EF6807 !important;
+    --bs-btn-border-color: #EF6807 !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-bg: #bb4e01 !important;
+    --bs-btn-hover-border-color: #9b4101 !important;
+    --bs-btn-focus-shadow-rgb: 60, 153, 110 !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-bg: #e66001 !important;
+    --bs-btn-active-border-color: #e66001 !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #fff !important;
+    --bs-btn-disabled-bg: #EF6807 !important;
+    --bs-btn-disabled-border-color: #EF6807 !important;
+}
+
+.accordion {
+    --bs-accordion-btn-focus-border-color: orange !important;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem orange !important;
+    --bs-accordion-active-color: orange !important;
+}
+
+.btn-accordion {
+    background-color: #fff !important;
+}
+
+.btn-accordion2 {
+    background-color: #fdfdfd !important;
+}
+
+.scroll-bg {
+    background-color: #F5F5F5;
+    padding: 10px 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.scroll-div {
+    height: 400px;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}

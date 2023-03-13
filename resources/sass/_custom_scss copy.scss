@@ -1,0 +1,250 @@
+// ========================================== //
+//                 CONTAINERS                 //
+// ========================================== //
+
+.main-container {
+    max-width: 90%;
+    padding-bottom: 5%;
+}
+
+.p-background {
+    background-image: url('/public/assets/img/wood-bg.png');
+    background-size: cover;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+
+    @include media-breakpoint-down(lg) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+//==========================//
+//          CARDS           //
+//==========================//
+
+.main-container {
+    @include media-breakpoint-down(sm) {
+        min-width: 100% !important;
+    }
+}
+
+.mealContainer {
+    @include media-breakpoint-up(xl) {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 20%;
+        max-width: 20%;
+    }
+
+    @include media-breakpoint-down(xl) {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 25%;
+        max-width: 25%;
+    }
+
+    @include media-breakpoint-down(lg) {
+        flex-direction: column;
+        flex: 1 1 33%;
+        max-width: 33%;
+    }
+
+    @include media-breakpoint-down(md) {
+        flex-direction: column;
+        flex: 1 1 50%;
+        max-width: 50%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        flex-direction: column;
+        flex: 1 1 100%;
+        max-width: 100%;
+
+        .c-card {
+            flex-direction: row;
+        }
+    }
+}
+
+.mealCheck {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 999;
+
+}
+
+.c-card {
+    @extend .card;
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0.1rem 1rem 1rem 0rem;
+    transition: all 0.3s ease;
+
+    &.hover:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+
+        .mealCheck {
+            cursor: pointer;
+        }
+    }
+}
+
+// ========================================== //
+//                   HEADER                   //
+// ========================================== //
+
+
+.bannerImg>img {
+    max-width: 10%;
+}
+
+.bannerImg {
+    background-image: url('/public/assets/img/background-footer.svg');
+    background-size: cover;
+}
+
+// ========================================== //
+//                   NAVBAR                   //
+// ========================================== //
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.custom-navbar-brand {
+    @extend .navbar-brand;
+    font-size: x-large;
+    color: orange;
+}
+
+// ========================================== //
+//                   GENERAL                  //
+// ========================================== //
+
+.text-orange {
+    @extend .text-light;
+    color: orange !important;
+}
+
+#orderNow {
+    display: flex;
+    justify-content: center;
+}
+
+input[value=Commander] {
+
+    @include media-breakpoint-up(md) {
+        padding-left: 10rem !important;
+        padding-right: 10rem !important;
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        font-size: 1.5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+        font-size: 1.5rem;
+    }
+}
+
+.selecteds {
+    transform: scale(1.05);
+    box-shadow: orange 0px 5px 15px;
+    transition: all 0.3s ease;
+}
+
+// ========================================== //
+//                   FOOTER                   //
+// ========================================== //
+
+
+//vv -- Liens vers autres pages Footer -- vv//
+a.footer-links {
+    text-decoration: none;
+    color: $light;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: orange;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+    }
+}
+
+body>footer>div>div.d-flex {
+    @include media-breakpoint-down(lg) {
+        flex-direction: column;
+
+        img {
+            max-width: 5%;
+        }
+
+        div>a {
+            font-size: 1rem !important;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        div {
+            flex-direction: column;
+
+            a {
+                color: orange;
+
+                &:hover {
+                    color: $light;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+body>footer>div>div.d-flex>div {
+    margin-right: 8.2%;
+}
+
+//^^ -- Liens vers autres pages Footer -- ^^//
+
+.footer-logo {
+    min-width: 5%;
+    margin-left: 2rem;
+    display: block;
+    justify-self: center;
+}
+
+// ========================================== //
+//                 ANIMATIONS                 //
+// ========================================== //
+
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+body>main>div>div>div>form>div.row.justify-content-center.d-flex>div.text-light.d-flex.flex-column.align-items-center.m-3>div>ul {
+    list-style: none;
+}
